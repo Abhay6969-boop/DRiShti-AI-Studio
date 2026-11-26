@@ -7,7 +7,12 @@
       "request": "launch",
       "program": "${workspaceFolder}/server.py",
       "console": "integratedTerminal",
-      "justMyCode": true
+      "justMyCode": true,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "Running on (https?://\\S+)",
+        "uriFormat": "%s"
+      }
     }
   ]
 }
